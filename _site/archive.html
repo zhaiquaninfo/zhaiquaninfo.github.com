@@ -5,10 +5,7 @@
     <meta charset="utf-8">
     <title>Archive</title>
     
-    <meta name="author" content="Name Lastname">
-
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JingKun Yu">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -16,8 +13,9 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/docs.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -26,18 +24,99 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
-
-    <!-- atom & rss feed -->
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
   </head>
 
   <body>
-    <div class="navbar">
+
+   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="/">Jekyll Bootstrap</a>
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">债券回购投资</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">首页</a></li>
+              <li class="active"><a href="http://121.199.24.147/index.php?c=main&a=index">关于我们</a></li>
+              <li class="dropdown">
+                <a href="<{spUrl c=bonds a=shbonds cid=1}>" class="dropdown-toggle" data-toggle="dropdown">债券列表<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://121.199.24.147/index.php?c=bonds&a=shbonds&cid=1">沪地方城投债</a></li>
+                  <li><a href="http://121.199.24.147/index.php?c=bonds&a=shbonds&cid=2">沪公司企业债</a></li>
+                  <li><a href="http://121.199.24.147/index.php?c=bonds&a=shbonds&cid=3">沪国债地方政府债</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">深地方城投债</a></li>
+                  <li><a href="#">深公司企业债</a></li>
+                  <li><a href="#">深国债地方政府债</a></li>
+                </ul>
+              </li>
+              <li><a href="http://121.199.24.147/index.php?c=main&a=signin">登陆系统</a></li>
+            </ul>
+            <form class="navbar-form pull-right form-search"  method="get" id="searchform" target="_blank" action="http://121.199.24.147/index.php">
+              <input type="hidden" name="c" value="main">
+              <input type="hidden" name="a" value="search_bond">
+              <div class="input-append">
+                <input class="input-medium search-query" id="search_box" name="code" type="text" placeholder="输入债券代码" autocomplete="off" spellcheck="false">
+                <button class="btn" type="submit">搜索</button>
+              </div>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="span9">
+          <h3>储蓄是单利，债券是复利 </h3>
+          <p>这里所说的债券，仅指交易所上市的债券，不包括凭证式国债等。</p>
+          <p>储蓄是单利，毋庸置疑。那么，债券是单利还是复利呢？几乎所有债券招募说明书上都申明“本期债券采用单利按年计息不计复利”。据此，似可认定债券是单利。其实不然，债券不是单利，而是复利。</p>
+          <p>说债券是复利，是因为债券的付息方式是“每年付息一次”（个别债券每年付息两次）。它不同于储蓄（凭证式国债也称为储蓄式国债）的到期一次性还本付息。单利和复利的区别在于利息是否再生利息。债券本身，按年计息并派息付息从而不可能再计复利，但投资者获得利息后可通过再投资，让利息再生利息，从而实现复利。也许有人会反问，我每年获得的利息不再投入，不就是单利了吗？非也！收益计算，排除个人行为的随意性。在一个封闭时间内，一定量的资金投入后，中间不追加也不流出，用期末按收益计算年化收益（年利率）。</p>
+          <p>100元的5年期存款，年利率5.5%，到期利息共5.5*5=27.5元。如果是100元的5年期债券，年利率5.5%，每年派息，不考虑债券的价格波动（即除息后全价仍然100元），也不考虑利息税，每年的利息都全部再投入该债券，则到期后利息总收益=（1+0.055）^5-1=30.70元，比储蓄多得利息30.7-27.5=3.2元 </p>
+          <p class="pull-right"><a class="btn btn-info" href="#">阅读全文 &raquo;</a></p>
+          <div class="clearfix"></div>
+          <hr class="soften">
+          <h3>储蓄是单利，债券是复利 </h3>
+          <p>这里所说的债券，仅指交易所上市的债券，不包括凭证式国债等。</p>
+          <p>储蓄是单利，毋庸置疑。那么，债券是单利还是复利呢？几乎所有债券招募说明书上都申明“本期债券采用单利按年计息不计复利”。据此，似可认定债券是单利。其实不然，债券不是单利，而是复利。</p>
+          <p>说债券是复利，是因为债券的付息方式是“每年付息一次”（个别债券每年付息两次）。它不同于储蓄（凭证式国债也称为储蓄式国债）的到期一次性还本付息。单利和复利的区别在于利息是否再生利息。债券本身，按年计息并派息付息从而不可能再计复利，但投资者获得利息后可通过再投资，让利息再生利息，从而实现复利。也许有人会反问，我每年获得的利息不再投入，不就是单利了吗？非也！收益计算，排除个人行为的随意性。在一个封闭时间内，一定量的资金投入后，中间不追加也不流出，用期末按收益计算年化收益（年利率）。</p>
+          <p>100元的5年期存款，年利率5.5%，到期利息共5.5*5=27.5元。如果是100元的5年期债券，年利率5.5%，每年派息，不考虑债券的价格波动（即除息后全价仍然100元），也不考虑利息税，每年的利息都全部再投入该债券，则到期后利息总收益=（1+0.055）^5-1=30.70元，比储蓄多得利息30.7-27.5=3.2元 </p>
+          <p class="pull-right"><a class="btn btn-info" href="#">阅读全文 &raquo;</a></p>
+          <div class="clearfix"></div>
+          <hr class="soften">
+          
+          
+        </div>
+        <div class="span3 bs-docs-sidebar">
+          <div class="well well-small">
+            <h4 class="text-center">网站广告展示位置</h4>
+            <p class="text-center">在这里展示相应的广告，可以是券商，可以是理财产品，可以是投资相关的一切广告。</p>
+            <p class="text-center"><a class="btn btn-primary btn-medium" href="#">查看详情 &raquo;</a></p>
+          </div>
+            
+              <ul class="nav nav-list bs-docs-sidenav">
+                <li><a href="#"><h5>内容分类</h5></a></li>
+                <li><a href="#"><i class="icon-chevron-right"></i>利率市场</a></li>
+                <li><a href="#"><i class="icon-chevron-right"></i>债券市场</a></li>
+                <li><a href="#"><i class="icon-chevron-right"></i>股票市场</a></li>
+                <li><a href="#"><i class="icon-chevron-right"></i>宏观经济</a></li>
+                <li><a href="#"><i class="icon-chevron-right"></i>投资知识</a></li>
+              </ul>
+            
+            
+       </div>
+
+      </div>
+
+      <hr>
+   
+
+   <!--  <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">债券回购投资</a>
           <ul class="nav">
             
             
@@ -99,18 +178,18 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container-narrow">
+    <!-- <div class="container">
 
       <div class="content">
         
 <div class="page-header">
-  <h1>Archive </h1>
+  <h1>Archive <small>Supporting tagline</small></h1>
 </div>
 
-<div class="row-fluid">
-  <div class="span12">
+<div class="row">
+  <div class="span14">
     
 
 
@@ -124,12 +203,12 @@
     
   
     
-      <h2>2011</h2>
-      <h3>December</h3>
+      <h2>2013</h2>
+      <h3>May</h3>
       <ul>
     
   
-    <li><span>December 29, 2011</span> &raquo; <a href="/lessons/2011/12/29/jekyll-introduction">Jekyll Introduction</a></li>
+    <li><span>May 12, 2013</span> &raquo; <a href="/2013/05/12/need-speed">Need Speed</a></li>
   
     
       </ul>
@@ -141,16 +220,19 @@
 </div>
 
 
-      </div>
-      <hr>
+      </div> -->
+
       <footer>
-        <p>&copy; 2013 Name Lastname
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
+        <p>&copy; JingKun Yu 2013债券回购投资</p>
       </footer>
 
-    </div>
+    </div>  --><!-- /container
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/themes/twitter/bootstrap/js/jquery.js"></script>
+    <script src="/assets/themes/twitter/bootstrap/js/bootstrap.min.js"></script>
 
     
   </body>

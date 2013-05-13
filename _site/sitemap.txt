@@ -1,11 +1,11 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
+http://zhaiquaninfo.github.io/archive.html
+http://zhaiquaninfo.github.io/atom.xml
+http://zhaiquaninfo.github.io/categories.html
+http://zhaiquaninfo.github.io/index.html
+http://zhaiquaninfo.github.io/pages.html
+http://zhaiquaninfo.github.io/rss.xml
+http://zhaiquaninfo.github.io/sitemap.txt
+http://zhaiquaninfo.github.io/tags.html
 
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://zhaiquaninfo.github.io/2013/05/12/need-speed
